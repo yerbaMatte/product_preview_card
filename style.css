@@ -1,0 +1,103 @@
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+:root {
+  /* ### Primary */
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  /* ### Neutral */
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Cream);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  max-width: 60rem;
+  background-color: var(--White);
+  border-radius: 12px;
+}
+
+.perf-img {
+  width: 55%;
+  border-radius: 12px 0 0 12px;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.add-btn {
+  font-size: 1.6rem;
+  border: none;
+  padding: 1.6rem 0;
+  border-radius: 12px;
+  background-color: var(--Dark-cyan);
+  color: var(--White);
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.prices-container {
+  position: relative;
+}
+
+.price-current {
+  font-size: 3.6rem;
+  color: var(--Dark-cyan);
+}
+
+.price-old {
+  position: absolute;
+  top: 50%;
+  right: 55px;
+  transform: translate(0, -50%);
+  color: var(--Dark-grayish-blue);
+  text-decoration: line-through;
+  font-size: 1.4rem;
+}
+
+.preview {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 5px;
+}
+
+.title {
+  font-size: 3.2rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--Dark-grayish-blue);
+}
+
+.rect {
+  background-color: blue;
+  width: 240px;
+  height: 240px;
+}
