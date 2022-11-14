@@ -23,8 +23,21 @@
   </head>
   <body>
     <section class="container">
-      <img class="perf-img" src="/images/image-product-desktop.jpg" />
-
+      <!-- <img class="perf-img" src="/images/image-product-desktop.jpg" /> -->
+      <div class="photo-cont">
+        <picture>
+          <source
+            media="(min-width: 616px)"
+            srcset="/images/image-product-desktop.jpg"
+          />
+          <source srcset="/images/image-product-mobile.jpg" />
+          <img
+            class="perf-img"
+            src="/images/image-product-desktop.jpg"
+            alt="a head carved out of wood"
+          />
+        </picture>
+      </div>
       <div class="content-box">
         <p class="preview">perfume</p>
         <h2 class="title">Gabrielle Essence Eau De Parfum</h2>

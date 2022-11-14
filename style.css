@@ -37,8 +37,9 @@ body {
 }
 
 .perf-img {
-  width: 55%;
+  width: 100%;
   border-radius: 12px 0 0 12px;
+  height: 100%;
 }
 
 .content-box {
@@ -46,6 +47,16 @@ body {
   flex-direction: column;
   gap: 3rem;
   padding: 2rem;
+  width: 45%;
+}
+
+.photo-cont {
+  width: 55%;
+  transition: transform 0.2s;
+}
+
+.photo-cont:hover {
+  transform: scale(1.2);
 }
 
 .add-btn {
@@ -100,4 +111,35 @@ body {
   background-color: blue;
   width: 240px;
   height: 240px;
+}
+
+.add-btn:link {
+  background-color: #ff00ff;
+  color: #ff0000;
+}
+
+/* visited link */
+.add-btn:visited {
+  color: #00ff00;
+}
+
+/* mouse over link */
+.add-btn:hover {
+  background-color: #0000ff;
+  /* color: #ff00ff; */
+}
+
+/* selected link */
+.add-btn:active {
+  color: #0000ff;
+}
+
+@media (max-width: 615px) {
+  .container {
+    flex-direction: column;
+  }
+  .content-box,
+  .photo-cont {
+    width: 100%;
+  }
 }
